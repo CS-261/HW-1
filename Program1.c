@@ -9,11 +9,11 @@
 
 int foo(int* a, int* b, int c){
     /* Increment a */
-    a = a + 1;
+    *a = *a + 1;
     /* Decrement  b */
-    b = b - 1;
+    *b = *b - 1;
     /* Assign a-b to c */
-    c = a - b;
+    c = *a - *b;
     /* Return c */
     return c;
 }
