@@ -1,7 +1,7 @@
 /* CS261- HW1 - Program1.c*/
 /* Name: Austin Chayka
  * Date: 1.8.2020
- * Solution description:
+ * Solution description: Homework #1, Program #1
  */
  
 #include <stdio.h>

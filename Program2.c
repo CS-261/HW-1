@@ -1,7 +1,7 @@
 /* CS261- HW1 - Program2.c*/
 /* Name: Austin Chayka
  * Date: 1.8.2020
- * Solution description:
+ * Solution description: Homework #1, Program #2
  */
  
 #include <stdio.h>
@@ -40,7 +40,8 @@ void output(struct student* students){
               ...
               10. Initials Score*/
     int i;
-    for(i = 0; i < NUM_STUDENTS; i++) printf("%i. %c%c %i\n", i, students[i].initials[0], students[i].initials[1], students[i].score);
+    for(i = 0; i < NUM_STUDENTS; i++) 
+        printf("%i. %c%c %i\n", i + 1, students[i].initials[0], students[i].initials[1], students[i].score);
 }
 
 void summary(struct student* students){
@@ -52,7 +53,7 @@ void summary(struct student* students){
         if(students[i].score < min) min = students[i].score;
         total += students[i].score;
     }
-    printf("Max: %i, Min: %i, Average: %d\n", max, min, (double)total / NUM_STUDENTS);
+    printf("Max: %i, Min: %i, Average: %f\n", max, min, (double)total / NUM_STUDENTS);
 }
 
 void deallocate(struct student* stud){
